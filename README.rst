@@ -30,16 +30,16 @@ Configuration
 
 #. Run `manage.py collectstatic` to copy the Twitter Bootstrap toolkit files to your static directory.
 
-#. Ensure you added {% load bootstrap2 %} before use tags in templates.
+#. Ensure you added {% load bootstrap_tags %} before use tags in templates.
 
 
 Template Usage
-=================
+==============
 This application exposes a few template tags for including the Bootstrap toolkit files.
 
 Load the template tags before usage::
 
-    {% load bootstrap2 %}
+    {% load bootstrap_tags %}
 
 ```bootstrap_css```
 

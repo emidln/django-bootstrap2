@@ -1,4 +1,3 @@
 include LICENSE
 include README.rst
-recursive-include bootstrapped
-recursive-include bootstrapped/static *
+recursive-include bootstrap2 *

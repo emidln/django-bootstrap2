@@ -1,5 +1,5 @@
 ===============================================
-Django Bootstrapped with Twitter Bootstrap v2.0
+Django Bootstrap2 with Twitter Bootstrap v2.0
 ===============================================
 
 Bootstrapped is a reusable Django application to quickly integrate the Bootstrap toolkit from Twitter.  It's a
@@ -20,7 +20,7 @@ pip install git+git://github.com/MechanisM/django-bootstrap2.git
 Configuration
 =============
 
-#. Add the `bootstrapped` directory to your Python path.
+#. Add the `bootstrap2` directory to your Python path.
 
 #. Ensure `django.contrib.staticfiles` is added to your `INSTALLED_APPS` setting.
 

@@ -101,7 +101,7 @@ def bootstrap_field(parser,token):
 
 @register.filter
 def as_bootstrap(form):
-    template = get_template(TEMPLATE_PREFIX % "bootstrap2/form.html")
+    template = get_template(TEMPLATE_PREFIX % "form.html")
     c = Context({"form": form})
     return template.render(c)
 

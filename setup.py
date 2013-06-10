@@ -109,6 +109,7 @@ DESCRIPTION = "A reusable Django application to quickly integrate the Bootstrap 
 AUTHOR = "Benjamin Schiller"
 AUTHOR_EMAIL = "bschiller@guardanthealth.com"
 URL = "http://github.com/benjschiller/django-bootstrap2"
+DOWNLOAD_URL = "https://github.com/benjschiller/django-bootstrap2/downloads"
 VERSION = __import__(PACKAGE).__version__
 
 

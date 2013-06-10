@@ -105,11 +105,10 @@ leading ``./``), and all searching is case-insensitive.
 
 PACKAGE = "bootstrap2"
 NAME = "django-bootstrap2"
-DESCRIPTION = "A reusable Django application to quickly integrate the Bootstrap toolkit from Twitter."
-AUTHOR = "Eugene MechanisM"
-AUTHOR_EMAIL = "eugene@mechanism.name"
-URL = "http://github.com/MechanisM/django-bootstrap2"
-DOWNLOAD_URL = "https://github.com/MechanisM/django-bootstrap2/downloads"
+DESCRIPTION = "A reusable Django application to quickly integrate the Bootstrap toolkit from Twitter. Updated to Bootstrap 2.3.2"
+AUTHOR = "Benjamin Schiller"
+AUTHOR_EMAIL = "bschiller@guardanthealth.com"
+URL = "http://github.com/benjschiller/django-bootstrap2"
 VERSION = __import__(PACKAGE).__version__
 
 

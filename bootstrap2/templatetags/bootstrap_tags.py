@@ -114,31 +114,20 @@ class BootstrapJSNode(template.Node):
 
     def render_all_scripts(self):
         results = [
-            SCRIPT_TAG % (settings.STATIC_URL, 'alert'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'button'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'carousel'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'collapse'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'dropdown'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'modal'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'popover'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'scrollspy'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'tab'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'transition'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'twipsy'),
-            SCRIPT_TAG % (settings.STATIC_URL, 'typeahead'),
+            SCRIPT_TAG % (settings.STATIC_URL, 'min'),
         ]
         return '\n'.join(results)
 
     def render(self, context):
-        if 'all' in self.args:
-            return self.render_all_scripts()
-        else:
-            tags = [SCRIPT_TAG % (settings.STATIC_URL, tag) for tag in self.args]
-            return '\n'.join(tags)
+        return self.render_all_scripts()
 
 @register.simple_tag
 def bootstrap_css():
     return '<link rel="stylesheet" href="%scss/bootstrap.min.css">' % settings.STATIC_URL
+
+@register.simple_tag
+def bootstrap_responsive_css():
+    return '<link rel="stylesheet" href="%scss/bootstrap_responsive.min.css">' % settings.STATIC_URL
 
 @register.tag(name='bootstrap_js')
 def do_bootstrap_js(parser, token):

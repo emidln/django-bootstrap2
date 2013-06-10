@@ -105,7 +105,7 @@ def as_bootstrap(form):
     c = Context({"form": form})
     return template.render(c)
 
-SCRIPT_TAG = '<script src="%sjs/bootstrap-%s.js"></script>'
+SCRIPT_TAG = '<script src="%sjs/bootstrap.min.js"></script>'
 
 class BootstrapJSNode(template.Node):
 
@@ -114,7 +114,7 @@ class BootstrapJSNode(template.Node):
 
     def render_all_scripts(self):
         results = [
-            SCRIPT_TAG % (settings.STATIC_URL, 'min'),
+            SCRIPT_TAG % settings.STATIC_URL,
         ]
         return '\n'.join(results)
 

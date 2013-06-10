@@ -14,7 +14,7 @@ No files from Twitter's Bootstrap toolkit have been modified and retain their Ap
 Installation
 ============
 
-pip install git+git://github.com/MechanisM/django-bootstrap2.git
+pip install git+git://github.com/benjschiller/django-bootstrap2.git
 
 
 Configuration

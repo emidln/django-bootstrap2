@@ -1,5 +1,5 @@
 ===============================================
-Django Bootstrap2 with Twitter Bootstrap v2.0
+Django Bootstrap2 with Twitter Bootstrap v2.3.2
 ===============================================
 
 Bootstrapped is a reusable Django application to quickly integrate the Bootstrap toolkit from Twitter.  It's a
